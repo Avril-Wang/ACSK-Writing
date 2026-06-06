@@ -1,0 +1,44 @@
+\newpage %Do not remove this command
+%%%%%%%%%%%%%%%%%%%% REMOVE THIS WHOLE SECTION AFTER READING IT %%%%%%%%%%%%%%%%%%%% 
+\section*{References - Delete After Reading This Section}
+\noindent This is where your references will be placed. In this template, you will have two options. Option 1 will require you to fill in the acsk.bib file yourself. Then, when you start citing (using the identifier), it will appear in your reference list. Option two is less organised, but can be quicker. You have to arrange the order and Chicago-style yourself. Remove the option that you are not going to use.\\
+
+\noindent Notice how you can easily refer to an article \citep{Zako94A}. Place your articles together in the file {\tt bib/acsk.bib}. Another way to refer in the text to, for example, an
+article of \citet{Engl82A} or to a book \citep{Tayl86A}. Please have a look at the differences. Each command will show the reference in a different way. \\
+
+
+% \noindent You can also refer to equations, figures, graphs, and sections. You can also click on them in the text once you have referred to them. Clicking on them in the text will automatically bring you to the referenced equation, figure, graph or section. You can refer by using the autoref, ref, and eqref (for equations) commands. Do not forget to label your destination! Let us have a look at these different options and how to use them: \\
+
+% -  \textbf{autoref}: \autoref{fig: microVSapple}, \autoref{regression}, \autoref{Tab: 2nd Table}, \autoref{Results} \\ %Easiest to use and states the type (figure/table/equation) for you. Makes the type+number clickable.
+
+% -  \textbf{ref}: Figure \ref{fig: microVSapple}, Equation \ref{regression}, Table \ref{Tab: Mic Aapl}, section \ref{Results} \\ %Same as autoref, but will only show the number. You have to state the type yourself. Only the number is clickable.
+
+% - \textbf{eqref}: Equation \eqref{regression} and Equation \eqref{linear model} %Used for equations, but the equation number will be between parentheses. Note that you have to state the type yourself. Only the number is clickable.
+
+%%%%%%%%%%%%%%%%%%%% REMOVE UNTIL HERE! %%%%%%%%%%%%%%%%%%%% 
+
+%%%%%%%%%%%%%%%%%%%% OPTION 1 %%%%%%%%%%%%%%%%%%%% 
+\bibliographystyle{chicago}
+\bibliography{ACSK2026/bib/acsk.bib} %Do NOT remove this unless you want to create your own bibliography without the .bib file. See below.
+% \printbibliography 
+
+
+%%%%%%%%%%%%%%%%%%%% OPTION 2  %%%%%%%%%%%%%%%%%%%% 
+%Remove if not used
+
+% \iffalse \begin{thebibliography}{9} %If you are using this method, remove option 1. Also, remove the \iffalse and \fi commands
+% \bibitem{latexcompanion} %The identifier is placed within the curly brackets
+% Michel Goossens, Frank Mittelbach, and Alexander Samarin. 
+% \textit{The \LaTeX\ Companion}. 
+% Addison-Wesley, Reading, Massachusetts, 1993.
+
+% \bibitem{einstein} 
+% Albert Einstein. 
+% \textit{Zur Elektrodynamik bewegter K{\"o}rper}. (German) 
+% [\textit{On the electrodynamics of moving bodies}]. 
+% Annalen der Physik, 322(10):891–921, 1905.
+
+% \bibitem{knuthwebsite} 
+% Knuth: Computers and Typesetting,
+% \\\texttt{http://www-cs-faculty.stanford.edu/\~{}uno/abcde.html}
+% \end{thebibliography} \fi

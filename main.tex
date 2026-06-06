@@ -1,0 +1,68 @@
+\documentclass[a4paper, 11pt]{article}
+
+\usepackage[a4paper]{geometry}  % More space on A4 paper
+\usepackage{graphicx,epstopdf}  % Allow graphics to be included as eps/pdf/png
+\usepackage{dcolumn}            % Line-out columns
+\newcolumntype{d}[1]{D{.}{.}{#1}}   % Align columns in tables on decimal point
+\usepackage{float} %When graphs or tables start floating around
+\usepackage{tabularx,ragged2e,booktabs,caption}
+\usepackage{array}
+\usepackage[svgnames]{xcolor}
+\usepackage[utf8]{inputenc}
+\usepackage{lipsum}
+%%%%%%%%%%% mathematics %%%%%%%%%%%%%%%%%%
+\usepackage{amsmath,amsfonts,amssymb, amsthm}
+\usepackage{mathtools}
+\usepackage[noend]{algpseudocode}
+\usepackage{algorithm}
+\theoremstyle{definition}
+\newtheorem{definition}{Definition}[section]
+\newtheorem{theorem}{Theorem}
+\newcommand\numberthis{\addtocounter{equation}{1}\tag{\theequation}}
+
+
+% Use the bibliography, with \citet{}, \citep{}
+\usepackage{natbib}
+\usepackage{hyperref}   % For use with bibliography
+
+% Specify the location of the bib file. Note how you could refer to a different
+% directory, to use only one single bibtex file for all your texts, e.g.
+% \bibliography{../../../bibtex/mypersonalbib}
+% \bibliography{ACSK2026/bib/acsk}
+
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%% START HERE %%%%%%%%%%%%%%%%%%%%%%%%%%%% 
+
+\title{Example Title: ACSK Template For The Writing Assignment %\\
+        %\large Your Subtitle Here\\        
+        } 
+        
+        %Fill in Your Title. If you need a subtitle, remove the percentage sign in front of \\ and the percentage sign in front of the large command.
+
+
+
+
+
+\author{Group XX \\ %Change into your group number
+    Team Name %Optional. Remove if it is not needed.
+  \thanks{Name1 (XXXXXXX), Name2 (XXXXXXX), Name3 (XXXXXXX), Name4 (XXXXXXX), Name5 (XXXXXXX)}
+  }
+ 
+\date{June 2026}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% 
+
+%Do not change anything here unless you know what you are doing.
+\begin{document}
+\thispagestyle{empty}
+\maketitle
+\input{0-abstract} %Go to 0-abstract.tex to alter the abstract. 
+\input{1-First Section}
+\input{2-Second Section}
+\input{3-references} % This adds the references section. 
+
+
+
+
+\end{document}
