@@ -2,6 +2,26 @@
 \subsection{mandatory topics}
 
 \assign{Avril} Describe/summarize the NVP.
+The Newsvendor Problem(NVP)is a classic stochastic optimization problem. In real world, suppliers must decide how many units of perishable goods to order without knowing the real demand from customers. The challenge of the question is that how to balance the costs of stockouts and the cost of excess inventory.
+
+The profit function is formulated as:
+\begin{equation*}
+\Pi(Q, Y) = p \cdot \min\{Q, Y\} - c \cdot Q
+\end{equation*}
+In this equation, the $Q$ is the order quantity, $Y$ is the realized demand, $p$ is the price. 
+
+Since the demands are always uncertain when the decision is made, the core objective is that to find optimal order quantity $Q^*$ that maximizes the expected profit without knonwing the value of demand:
+\begin{equation*}
+Q^* = \arg\max_{Q \geq 0} \mathbb{E}_Y[\Pi(Q, Y)]
+\end{equation*}
+
+When the demand distribution $F_Y$ is known, the optimal order quantity is expressed as a quantile of the demand distribution:
+ \begin{equation*}
+Q^*(F_Y \mid c, p) = F_Y^{-1}\left(\frac{p-c}{p}\right)
+\end{equation*}
+ 
+The ratio $\frac{p-c}{p}$ represents the critical service level or critical fractile, means that the optimal order quantity corresponds directly to the percentile determined by the profit margin of the product. Intuitively, products with higher profit margins justify a higher stock levels to avoid stockouts, while lower-margin products warrant a more conservative ordering strategies to mitigate the risk of waste.
+
 
 \assign{Elifsu, Nitya} Motivate the importance of studying the NVP by presenting some interesting real-life examples.
 Explore applications related to the NVP and explain the reasons behind their relevance.
